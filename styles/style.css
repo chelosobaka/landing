@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 2000px;
+  min-width: 1800px;
+  height: 100%;
+  background-color: #eff6ff ;
+}
+
+h1, h2, h3, h4, h5 {
+  word-wrap: break-word;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  text-shadow: 3px 3px 0px rgba(42, 85, 94,0.4);
+  color: #da002b;
+}
+h1 {font-size: 4em;}
+h2 {font-size: 3em;}
+
+.half {
+  float: left;
+  min-width: 50%;
+  display:block;
+}
+.third {
+  float: left;
+  min-width: 33.33%;
+  display:block;
+}
+.wrapper {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.feather {
+  background-image: url("../images/feathers3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+@media (max-width: 500px) {
+  html, body {
+    max-width: 500px;
+    min-width: 500px;
+  }
+  h1 {font-size: 3em;}
+  h2 {font-size: 3em;}
+  .wrapper {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .feather {
+    background-image: none;
+    height: 1700px;
+  }
+  .half{
+    margin-left: auto;
+    margin-top: auto;
+    float:none;
+  }
+  .third {
+    float: none;
+    min-width: 33.33%;
+    margin-left: auto;
+    margin-top: auto;
+    display:block;
+  }
+}

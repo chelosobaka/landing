@@ -1,0 +1,80 @@
+.coach-box{
+  height: 820px;
+  display:block;
+}
+.coach .wrapper{
+  padding-top: 30px;
+}
+.title{
+  display: block;
+  margin-bottom: 70px;
+}
+.first-coach{
+  background-image: url("../images/bg-teacher1.jpg");
+}
+.second-coach{
+  background-image: url("../images/bg-teacher2.jpg");
+}
+.coach{
+  border-radius: 20px;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 400px;
+  box-shadow: 9px 1px 14px black;
+}
+.photo{
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  width: 250px;
+  margin-top: 50px;
+}
+.photo img{
+  object-fit: cover;
+  border-radius: 100%;
+  height: 250px;
+  width: 250px;
+  border-style: solid;
+  border-color: #eff6ff;
+  border-width: 10px;
+}
+.cv{
+  color: white;
+  font-size: 18px;
+  text-align: justify;
+  white-space: pre-line;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 20px;
+  background: rgb(0,0,0,.7);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 350px;
+}
+
+@media (max-width: 500px) {
+  .coach-box {
+    height: 1800px;
+    display:block;
+  }
+  .coach {
+    border-radius: 20px;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 800px;
+    box-shadow: none;
+  }
+  .first-coach{
+    background-image: none;
+  }
+  .second-coach{
+    background-image: none;
+  }
+}

@@ -1,0 +1,40 @@
+.header {
+  height: 300px;
+  display: block;
+}
+.header .wrapper {
+  padding-top: 25px;
+}
+.logo {
+  height: 200px;
+  width: 200px;
+  background-image: url("../images/head.png");
+  background-size: cover;
+  margin-left: 40px;
+}
+.logo h2 {
+  padding-top: 150px;
+}
+.right-text{
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  margin-right: 40px;
+}
+
+@media (max-width: 500px) {
+  .header {
+    height: 600px;
+  }
+  .logo{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .right-text{
+    margin-top: 20px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
