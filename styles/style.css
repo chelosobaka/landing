@@ -8,9 +8,10 @@ html, body {
   margin-left: auto;
   margin-right: auto;
   max-width: 2000px;
-  min-width: 1800px;
+  min-width: 1025px;
+  background-color: #eff6ff;
   height: 100%;
-  background-color: #eff6ff ;
+   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -20,59 +21,93 @@ h1, h2, h3, h4, h5 {
   text-shadow: 3px 3px 0px rgba(42, 85, 94,0.4);
   color: #da002b;
 }
+
 h1 {font-size: 4em;}
 h2 {font-size: 3em;}
 
 .half {
   float: left;
   min-width: 50%;
-  display:block;
 }
+
 .third {
   float: left;
   min-width: 33.33%;
-  display:block;
 }
+
 .wrapper {
-  display: block;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
+
 .feather {
   background-image: url("../images/feathers3.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+  height: auto;
+  width: auto;
+  overflow: hidden;
 }
 
-@media (max-width: 500px) {
-  html, body {
-    max-width: 500px;
-    min-width: 500px;
+@media only screen
+and (max-width: 1510px) {
+  .feather {
+    background: none;
   }
+}
+
+@media only screen
+and (max-device-width: 767px) {
+  html, body {
+    max-width: 767px;
+    min-width: 360px;
+  }
+
   h1 {font-size: 3em;}
-  h2 {font-size: 3em;}
+  h2 {font-size: 2em;}
+
   .wrapper {
-    display: block;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
+
   .feather {
     background-image: none;
-    height: 1700px;
+    height: auto;
   }
+
   .half{
     margin-left: auto;
     margin-top: auto;
     float:none;
   }
+
   .third {
     float: none;
     min-width: 33.33%;
     margin-left: auto;
     margin-top: auto;
     display:block;
+  }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  html, body {
+    max-width: 1024px;
+    min-width: 768px;
+    height: 100%;
+  }
+
+  h1 {font-size: 3em;}
+  h2 {font-size: 2em;}
+
+  .feather {
+    background-image: none;
+    height: auto;
   }
 }

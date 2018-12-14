@@ -1,6 +1,6 @@
 .main {
-  height: 650px;
-  display:block;
+  height: auto;
+  margin-bottom: 80px;
 }
 
 .right-main {
@@ -107,17 +107,40 @@ input:focus {
   }
 }
 
-@media (max-width: 500px) {
+@media only screen
+and (max-device-width: 767px) {
+  .main{
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .left-main {
+  height: auto;
+}
   .left-main ul {
     font-family: 'Oswald', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     color: #2a555e;
     font-weight: bold;
-    margin: 20px;
+    margin: 10px;
     list-style: none;
   }
 
   .left-main li {
     padding-left: 1em;
+  }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  .main {
+    height: auto;
+  }
+
+  .main .half{
+    margin-left: auto;
+    margin-top: auto;
+    float:none;
   }
 }

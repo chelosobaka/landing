@@ -1,15 +1,18 @@
 .media-box {
   border-top: 20px solid #70abaf;
   border-bottom: 20px solid #70abaf;
-  height: 590px;
-  display:block;
+  height: auto;
+  overflow: hidden;
   background-color: #2a555e;
 }
+
 .media-box .wrapper {
   margin-left: auto;
   margin-right: auto;
   padding-top: 25px;
+  margin-bottom: 40px;
 }
+
 .videobox {
   border: 20px solid #70abaf;
   background-color: #70abaf;
@@ -19,13 +22,14 @@
   margin-right: auto;
   box-shadow: 9px 1px 14px black;
 }
+
 .video {
   width: 700px;
   height: 400px;
 }
+
 .media-box .text {
   font-size: 18px;
-  text-align: justify;
   padding-left: 20px;
   padding-right: 20px;
   color: white;
@@ -37,14 +41,17 @@
   font-family: 'Oswald', sans-serif;
   box-shadow: 9px 1px 14px black;
 }
-@media (max-width: 500px) {
+
+@media only screen
+and (max-device-width: 767px) {
+
   .media-box {
     border-top: 20px solid #70abaf;
     border-bottom: 20px solid #70abaf;
-    height: 1400px;
-    display:block;
+    height: auto;
     background-color: #2a555e;
   }
+
   .videobox {
     border: 20px solid #70abaf;
     background-color: #70abaf;
@@ -54,22 +61,68 @@
     margin-right: auto;
     box-shadow: 9px 1px 14px black;
   }
+
   .video {
     width: 300px;
     height: 200px;
   }
+
   .media-box .text {
     font-size: 18px;
-    text-align: justify;
     padding-left: 20px;
     padding-right: 20px;
     color: white;
     margin-left: auto;
     margin-right: auto;
-    width: 340px;
-    height: 940px;
+    margin-bottom: 40px;
+    width: auto;
+    height: auto;
     white-space: pre-line;
     font-family: 'Oswald', sans-serif;
     box-shadow: 9px 1px 14px black;
+  }
+}
+
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+
+  .media-box {
+    height: auto;
+  }
+
+  .media-box .half{
+    float: none;
+  }
+
+  .media-box .text {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: auto;
+    height: auto;
+    white-space: pre-line;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 9px 1px 14px black;
+  }
+
+  .videobox {
+    margin-left: auto;
+    margin-right: auto;
+    border: 20px solid #70abaf;
+    background-color: #70abaf;
+    width: 440px;
+    height: 340px;
+    box-shadow: 9px 1px 14px black;
+  }
+
+  .video {
+    width: 400px;
+    height: 300px;
   }
 }
