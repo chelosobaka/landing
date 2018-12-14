@@ -1,8 +1,8 @@
 .price_and_sertificat {
   margin-top:125px;
-  height: 820px;
-  display:block;
+  height: auto;
 }
+
 .price {
   border-radius: 20px;
   background-size: cover;
@@ -12,9 +12,11 @@
   height: 600px;
   box-shadow: 9px 1px 14px black;
 }
+
 .last .wrapper {
   padding-top: 25px;
 }
+
 .sertificat {
   border-radius: 20px;
   background-size: cover;
@@ -24,24 +26,22 @@
   height: 600px;
   box-shadow: 9px 1px 14px black;
 }
+
 .price_and_sertificat .title {
-  display: block;
   margin-bottom: 70px;
   padding-top: 20px;
 }
+
 .doc {
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
+  margin: 0px auto;
   height: 350px;
-  width: 250px;
+  width: 230px;
   margin-top: 10px;
-}
-.doc img {
   object-fit: cover;
   background-size: cover;
-  height: 350px;
-  width: 250px;
 }
+
 .pricer p {
   text-align: center;
   font-family: 'Oswald', sans-serif;
@@ -50,49 +50,91 @@
   color: #2a555e;
   font-weight: bold;
 }
-@media (max-width: 500px) {
+
+@media only screen
+and (max-device-width: 767px) {
+
+  .price_and_sertificat .half{
+    float: none;
+
+  }
+
   .price_and_sertificat {
     margin-top:125px;
-    height: 820px;
-    display:block;
+    height: auto;
   }
+
   .price {
     border-radius: 20px;
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width:auto;
     height: 400px;
     box-shadow: 9px 1px 14px black;
     margin-bottom: 20px;
   }
+
   .pricer p {
     text-align: center;
     font-family: 'Oswald', sans-serif;
     margin: 10px;
-    font-size: 40px;
+    font-size: 30px;
     color: #2a555e;
     font-weight: bold;
   }
+
   .sertificat {
     border-radius: 20px;
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: auto;
     height: 1300px;
     box-shadow: 9px 1px 14px black;
   }
+
   .price_and_sertificat .title {
-    display: block;
     margin-bottom: 70px;
     padding-top: 20px;
   }
+
   .doc {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     height: 350px;
     width: 250px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+
+  .price_and_sertificat{
+    height: auto;
+  }
+
+  .price_and_sertificat .half{
+    float: none;
+  }
+
+  .price {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .sertificat{
+    width: auto;
+  }
+
+  .doc {
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 200px;
     margin-top: 10px;
   }
 }

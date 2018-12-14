@@ -1,10 +1,12 @@
 .header {
-  height: 300px;
-  display: block;
+  height: auto;
+  overflow: hidden;
 }
+
 .header .wrapper {
   padding-top: 25px;
 }
+
 .logo {
   height: 200px;
   width: 200px;
@@ -12,29 +14,66 @@
   background-size: cover;
   margin-left: 40px;
 }
+
 .logo h2 {
   padding-top: 150px;
 }
-.right-text{
+
+.right-text {
   float: right;
   margin-left: auto;
   margin-right: auto;
   margin-right: 40px;
 }
 
-@media (max-width: 500px) {
+.right-text p{
+  word-wrap: break-word;
+  font-family: 'Lobster', cursive;
+  text-align: left;
+  text-shadow: 3px 3px 0px rgba(42, 85, 94,0.4);
+  color: #da002b;
+  font-size: 3em;
+}
+
+@media only screen
+and (max-device-width: 767px) {
   .header {
-    height: 600px;
+    height: 400px;
   }
+
   .logo{
     margin: 0;
     margin-left: auto;
     margin-right: auto;
   }
+  .logo h2{
+    font-size: 3em;
+  }
+
   .right-text{
     margin-top: 20px;
     float: none;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .right-text p{
+    font-size: 2em;
+   text-align: center;
+  }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+
+  .logo h2{
+    font-size: 3em;
+  }
+
+  .right-text p{
+    font-size: 2em;
+  }
+
+
 }
