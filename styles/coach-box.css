@@ -1,15 +1,22 @@
 .coach-box{
   height: auto;
   overflow: hidden;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
+  background-color: #eff6ff;
 }
 
 .coach .wrapper{
   padding-top: 30px;
 }
 
-.title{
+.name h2{
   margin-bottom: 70px;
+  cursor: pointer;
+}
+.name h2:hover{
+  color: #ff0032;
+  text-shadow: 2px 2px 0px #fff, 3px 2px 0px rgba(0,0,0,0.15);
+  transition: .6s;
 }
 
 .first-coach{

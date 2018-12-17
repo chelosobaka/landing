@@ -9,9 +9,8 @@ html, body {
   margin-right: auto;
   max-width: 2000px;
   min-width: 1025px;
-  background-color: #eff6ff;
+  /*background-color: #eff6ff;*/
   height: 100%;
-   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -40,14 +39,11 @@ h2 {font-size: 3em;}
   margin-left: auto;
   margin-right: auto;
 }
-
 .feather {
-  background-image: url("../images/feathers3.png");
-  background-size: contain;
+  /*background-image: url("../images/feathers3.png");*/
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
   height: auto;
-  width: auto;
   overflow: hidden;
 }
 
